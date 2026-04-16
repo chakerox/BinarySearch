@@ -53,6 +53,13 @@ void display(){
             cout << ">";
         }
     }
+    cout << endl;
+}
+
+void binarySearch(){
+   char ulang;
+   do{
+    cout << "Masukan elemen yang ingin dicari:";
 }
 int main(){
 
