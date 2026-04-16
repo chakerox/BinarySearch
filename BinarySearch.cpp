@@ -18,9 +18,9 @@ void input(){
         }
     }
 
-    cout <<"\n==================\n";
-    cout <<"Masukan Elemen Array";
-    cout <<"====================";
+    cout <<"\n==========================\n";
+    cout <<"\n   Masukan Elemen Array   \n";
+    cout <<"============================\n";
 
     for(int i = 0;i < nPanjang;i++){
         cout << "Data ke-" << (i+1) << "=";
@@ -32,7 +32,7 @@ void bubbleSortArray(){
     int pass = 1;
     do{
         for(int j = 0; j <= nPanjang -1 - pass;j++){
-            if(elemen[j] > elemen[j-1]){
+            if(elemen[j] > elemen[j+1]){
                 int temp = elemen[j];
                 elemen[j] = elemen[j+1];
                 elemen[j+1] = temp;
@@ -43,9 +43,9 @@ void bubbleSortArray(){
 }
 
 void display(){
-    cout << "\n====================\n";
-    cout << "Elemen Array setelah diurutkan(Asc)\n";
-    cout << "=====================\n";
+    cout << "\n=======================================\n";
+    cout << "   Elemen Array setelah diurutkan(Asc)   \n";
+    cout << "=========================================\n";
 
     for(int j = 0;j < nPanjang;j++){
         cout << elemen[j];
@@ -59,9 +59,9 @@ void display(){
 void binarySearch(){
    char ulang;
    do{
-    cout << "\n=====================\n";
-    cout << "Pencarian Binary Search\n";
-    cout << "=====================\n";
+    cout << "\n=============================\n";
+    cout << "   Pencarian Binary Search   \n";
+    cout << "==============================\n";
 
     cout << "Masukan Elemen yang ingin dicari:";
     cin >> x;
